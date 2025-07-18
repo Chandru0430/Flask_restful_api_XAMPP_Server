@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+<style>
+    body {
+        background-color: #FCE4EC;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    h1 {
+        color: #1976D2;
+        text-align: center;
+    }
+</style>
+
+<div class="container">
+    <h1>Contact Us</h1>
+    <p>Ready to transform your business with innovative technology solutions? Get in touch with our team of experts.</p>
+    <form method="POST" class="row g-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="col-md-6">
+        <label for="mobile" class="form-label">Mobile Number</label>
+        <input type="tel" class="form-control" id="mobile" name="mobile" required>
+      </div>
+      <div class="col-md-6">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" class="form-control" id="location" name="location" required>
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form>
+</div>
+{% endblock %}
